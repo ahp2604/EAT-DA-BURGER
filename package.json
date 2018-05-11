@@ -8,6 +8,7 @@
     "epress": "0.0.1-security",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
     "mysql": "^2.15.0"
   },
   "devDependencies": {},

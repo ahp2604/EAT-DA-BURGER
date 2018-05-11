@@ -2,27 +2,27 @@ var connection = require('../config/connection.js');
 
 var orm = {
     //select all burgers from table
-    selectAll: function(tableName){
+    selectAll: function(tableName,cb){
         var queryString = "SELECT * FROM ??";
         connection.query(queryString, [tableName], function(err, res){
             if (err) throw err;
-            console.log(res);
+            cb(res);
         })
     },
     //insert new burger to the table
-    insertOne: function(tableName,colName, valueOfCol ){
+    insertOne: function(tableName,colName, valueOfCol,cb){
         var queryString = "INSERT INTO ?? (??) VALUES (?)"
         connection.query(queryString, [tableName,colName,valueOfCol], function(err,res){
             if(err) throw err;
-            console.log(res);
+            cb(res);
         })
     },
     //update eaten or not yet eaten
-    updateOne: function(tableName,valueOfCol){
+    updateOne: function(tableName,colBoolean,valueOfColBoolean,idOfItem,idValue,cb){
         var queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?"
-        connection.query(queryString,[tableName,colBoolean,valueOfColBoolena,idOfItem, idValue], function(err, res){
+        connection.query(queryString,[tableName,colBoolean,valueOfColBoolean,idOfItem, idValue], function(err, res){
             if (err) throw err;
-            console.log(res);
+            cb(res);
         })
     }
 };
