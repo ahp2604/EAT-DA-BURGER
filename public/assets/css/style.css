@@ -1,0 +1,82 @@
+html {
+    background-color:royalblue;
+}
+
+body {
+   width: 98%;
+   margin: 0 auto; 
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-color: white;
+}
+
+
+
+#burger_pic {
+   display: block;
+   margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 65px;
+    font-weight: bolder;
+    margin: 50px;
+}
+
+.burgerAvailable {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 25px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color:yellow;
+    border: none;
+}
+
+.burgerAvailable:hover {
+    background-color: orange;
+}
+
+.burgerEaten {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff5c9;
+}
+
+h2 {
+     text-align: center;
+     font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    margin: 50px;
+}
+
+
+.addButton {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: royalblue;
+    color: peachpuff;
+}
+
+.addButton:active {
+   background-color: blue;
+   color: aliceblue;
+}
+
